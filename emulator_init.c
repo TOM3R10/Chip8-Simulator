@@ -353,12 +353,6 @@ int main() {
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);
 
-    draw_sprite(chip8, 0, 0, 5); // Draw '0' at (0,0)
-
-    // Set I to the location of the character '1' in the fontset
-    chip8->I = 0x050 + 5; // 5 bytes per character
-    draw_sprite(chip8, 5, 0, 5); // Draw '1' at (5,0)
-
 
     while(!glfwWindowShouldClose(window)) {
         // Emulation cycle
